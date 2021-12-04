@@ -3,12 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
 /* apply styles to <body> */
 body {
   color: #39a6b2;
   font-family: helvetica, Arial, sans-serif;
 }
 header {
+  z-index: 9999;
   padding: 20px 35px;
   background-color: #39a6b2;
   position: -webkit-sticky;
@@ -24,14 +30,14 @@ background-position: 80%;
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: #fce138;
+  color: var(--primary-color);
   margin: 0;
   display: inline;
 }
 
 header a {
   text-decoration: none;
-  color: #fce138;
+  color: var(--primary-color);
 }
 header nav {
   float: right;
@@ -46,19 +52,19 @@ header nav ul li a {
   font-size: 22px;
 }
 header nav ul li a:hover {
-  background: #fce138;
-  color: #024e76;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
 }
 footer {
-  background: #fce138;
+  background: var(--primary-color);
   width: 100%;
   padding: 40px 35px;
 }
 footer h2 {
   display: inline;
-  color: #024e76;
+  color: var(--secondary-color);
   font-size: 30px;
   margin: 0;
 }
@@ -68,7 +74,7 @@ footer div {
   text-align: right;
 }
 footer a {
-  color: #024e76;
+  color: var(--secondary-color);
 }
 section {
   padding: 60px;
@@ -85,11 +91,11 @@ section {
 background-position: 80%;
 }
 .hero-form {
-  border: 3px solid #024e76;
-  background-color: #fce138;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 20px;
   width: 500px;
-  color: #024e76;
+  color: var(--secondary-color);
   position: absolute;
   bottom: 120px;
   right: 140px;
@@ -114,7 +120,7 @@ background-position: 80%;
 }
 
 .form-input {
-  border: 1px solid #024e76;
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   display: block;
   padding: 7px 15px;
@@ -127,8 +133,8 @@ background-position: 80%;
   margin: 0 5px;
 }
 .hero-form button {
-  color: #fce138;
-  background-color: #024e76;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -144,11 +150,11 @@ background-position: 80%;
 }
 .intro h2 {
   font-size: 55px;
-  color: #024e76;
+  color: var(--secondary-color);
   margin-bottom: 35px;
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
-  border-color: #fce138;
+  border-color: var(--primary-color);
 }
 .intro h2 {
   /* add this alongside your other declarations */
@@ -167,7 +173,7 @@ background-position: 80%;
 
 .steps {
   text-align: center;
-  background: #fce138;
+  background: var(--primary-color);
 }
 .steps h2 {
   font-size: 55px;
@@ -187,7 +193,7 @@ background-position: 80%;
 }
 
 .primary-border {
-  border-color: #fce138;
+  border-color: var(--primary-color);
 }
 
 .secondary-border {
@@ -230,7 +236,7 @@ background-position: 80%;
     width: 900px;
     margin: 0 auto 30px auto;
     background: #024e76;
-    color: #fce138;
+    color: var(--primary-color);
     overflow: auto;
   }
   .trainer img {
@@ -272,13 +278,13 @@ background-position: 80%;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
     margin-bottom: 35px;
-    color: #024e76;
+    color: var(--secondary-color);
   }
 
 /* REACH OUT STYLES START */
 .contact {
   text-align: center;
-  background: #024e76;
+  background: var(--secondary-color);
 }
 .contact-form input, .contact-form textarea {
   border-radius: 10px;
@@ -288,11 +294,12 @@ background-position: 80%;
   border-radius: 10px;
 }
 .contact-form button:hover {
-  color: #fce138;
+  color: var(--primary-color);
   background: #39a6b2;
 }
 .contact h2 {
-  color: #fce138;
+  color: var(--primary-color);
+  ;
 }
 
 .contact-info iframe {
@@ -310,7 +317,7 @@ background-position: 80%;
 }
 
 .contact-info h3 {
-  color: #fce138;
+  color: var(--primary-color);
   font-size: 32px;
 }
 
@@ -322,7 +329,7 @@ background-position: 80%;
 }
 
 .contact-info a {
-  color: #fce138;
+  color: var(--primary-color);
 }
 
 /* REACH OUT STYLES END */
